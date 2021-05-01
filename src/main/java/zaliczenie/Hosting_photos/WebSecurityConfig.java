@@ -30,7 +30,7 @@ public class WebSecurityConfig  extends WebSecurityConfigurerAdapter {
 
     @Override
     protected void configure(AuthenticationManagerBuilder auth) throws Exception {
-    //   auth.inMemoryAuthentication().withUser(new User("Michal", passwordEncoder().encode("Michal123"), Collections.singleton(new SimpleGrantedAuthority("user"))));
+      // auth.inMemoryAuthentication().withUser(new User("Michal", passwordEncoder().encode("Michal123"), Collections.singleton(new SimpleGrantedAuthority("user"))));
     auth.userDetailsService(userDetailsService);
 
     }
@@ -58,7 +58,7 @@ public class WebSecurityConfig  extends WebSecurityConfigurerAdapter {
     }
 
 
-//   @EventListener(ApplicationReadyEvent.class)
+ // @EventListener(ApplicationReadyEvent.class)
     public void get(){
 
         AppUser appUserUser=new AppUser("Michal", passwordEncoder().encode("Kowal"),"ROLE_USER");

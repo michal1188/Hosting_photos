@@ -45,8 +45,8 @@ private  List<Image>imageList;
         this.galleryRepo = galleryRepo;
         cloudinary = new Cloudinary(ObjectUtils.asMap(
                 "cloud_name", "dzmsneqsv",
-                "api_key", "398393866338821",
-                "api_secret", "ZWNGbcGwuxw5iIp4V97MmVfy05E"));
+                "api_key", "**",
+                "api_secret", "***"));
 
     }
 

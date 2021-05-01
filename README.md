@@ -2,7 +2,7 @@
 
 ## **Opis aplikacji**
 
-Stworzona aplikacja zajmuje  się hostingiem zdjęć. Program  posiada 2 rodzaje użytkowników(administrator oraz user), których będzie przechowywać baza danych. Po zalogowaniu administrator ma możliwość  dodawania ,edytowania  oraz  usuwania zdjęć , a ponadto dodawania oraz  usuwania galerii .Zdjęcia będą przypisywane do konkretnych galerii. Po zalogowaniu użytkownik mam możliwość przeglądania zdjęć oraz dostępnych galerii, ponadto użytkownik ma możliwość dodawania komentarzy. Serwis jest skierowany do użytkowników chcących dodawać i pogrupować pliki graficzne .Nie zalogowany użytkownik mam możliwość oglądania zdjęć i dodawania komentarzy. Nowych użytkowników dodaje tylko programista.
+Stworzona aplikacja zajmuje  się hostingiem zdjęć. Program  posiada 2 rodzaje użytkowników (administrator oraz user), których będzie przechowywać baza danych. Po zalogowaniu administrator ma możliwość  dodawania, edytowania  oraz  usuwania zdjęć, a ponadto dodawania oraz  usuwania galerii .Zdjęcia będą przypisywane do konkretnych galerii. Po zalogowaniu użytkownik ma możliwość przeglądania zdjęć w dostępnych galeriach, ponadto użytkownik ma możliwość dodawania komentarzy. Serwis jest skierowany do użytkowników chcących dodawać i pogrupować pliki graficzne .Nie zalogowany użytkownik ma  możliwość oglądania zdjęć i dodawania komentarzy. Nowych użytkowników dodaje tylko programista.
 
 ## **Technologie**
 
