@@ -7,9 +7,12 @@ import com.vaadin.flow.component.orderedlayout.VerticalLayout;
 import com.vaadin.flow.component.textfield.TextField;
 import com.vaadin.flow.router.Route;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 import zaliczenie.Hosting_photos.model.Galleria;
 import zaliczenie.Hosting_photos.repo.ImageRepo;
 import zaliczenie.Hosting_photos.service.GalleryUploader;
+
 
 @Route("admin/dodaj_galerie")
 public class AddGalleryGui   extends VerticalLayout {
@@ -18,25 +21,25 @@ public class AddGalleryGui   extends VerticalLayout {
     @Autowired
     public AddGalleryGui( GalleryUploader galleryUploader) {
         this.galleryUploader=galleryUploader;
-        Label label= new Label();
-        TextField textField= new TextField();
+    Label label= new Label();
+    TextField textField= new TextField();
         textField.setLabel("Nazwa galerii");
-        Button button= new Button("Dodaj galerie");
+    Button button= new Button("Dodaj galerie");
         button.addClickListener(buttonClickEvent ->{
-            Galleria galleria= new Galleria();
-            galleria.setNazwa(textField.getValue());
-            galleryUploader.save(galleria);
-            label.setText("Udało się dodać galerie");
-            add(label);
-                }
+        Galleria galleria= new Galleria();
+        galleria.setNazwa(textField.getValue());
+        galleryUploader.save(galleria);
+        label.setText("Udało się dodać galerie");
+        add(label);
+    }
         );
 
-        Anchor logout = new Anchor("logout", "Log out");
+    Anchor logout = new Anchor("logout", "Log out");
 
-        add(textField);
-        add(button);
+    add(textField);
+    add(button);
     add(logout);
-    }
+}
 
 
 }

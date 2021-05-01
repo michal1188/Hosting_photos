@@ -1,12 +1,9 @@
 package zaliczenie.Hosting_photos.model;
 
-import javafx.event.Event;
-import org.hibernate.validator.constraints.UniqueElements;
-import org.springframework.dao.DataAccessException;
 
 import javax.persistence.*;
 import java.util.ArrayList;
-import java.util.Collection;
+
 import java.util.List;
 
 

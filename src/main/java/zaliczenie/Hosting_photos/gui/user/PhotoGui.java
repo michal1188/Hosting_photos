@@ -1,7 +1,5 @@
 package zaliczenie.Hosting_photos.gui.user;
 
-import com.sun.javaws.JAuthenticator;
-import com.vaadin.flow.component.UI;
 import com.vaadin.flow.component.button.Button;
 import com.vaadin.flow.component.html.Anchor;
 import com.vaadin.flow.component.html.Label;
@@ -10,15 +8,14 @@ import com.vaadin.flow.component.select.Select;
 import com.vaadin.flow.component.textfield.TextArea;
 import com.vaadin.flow.router.Route;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.autoconfigure.security.oauth2.client.servlet.OAuth2ClientAutoConfiguration;
-import org.springframework.security.core.Authentication;
+
 import org.springframework.security.core.context.SecurityContextHolder;
 import zaliczenie.Hosting_photos.model.*;
 import zaliczenie.Hosting_photos.model.Image;
-import zaliczenie.Hosting_photos.repo.KomentarzRepo;
+
 import zaliczenie.Hosting_photos.service.*;
 
-import java.awt.*;
+
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
